@@ -65,8 +65,14 @@ int main()
         }
         else if(c == '2')
         {
-            myIOs = myIOs ^ IOS; // Toggle IOs level
-            printf("PA_5 + PA_7 toogled\n");
+            myIOs = IOS; // Toggle IOs level
+            printf("PA_5 + PA_7 On\n");
+            wait(0.5); // 500 ms
+        }
+        else if(c == '6')
+        {
+            myIOs = 0x00; // Toggle IOs level
+            printf("PA_5 + PA_7 Off\n");
             wait(0.5); // 500 ms
         }
         else if (c == '3')
@@ -76,7 +82,7 @@ int main()
         }
         else if(c == '4')
         {
-           printf("Val=%d    |     rise_A1 = %d   |  fall_A1 = %d  |  rise_A3 = %d  | fall_A3 = %d  |\r\n", val, riseA1, fallA1, riseA3, fallA3);
+           printf("Values:%d;%d;%d;%d  |\r\n", val, riseA1, fallA1, riseA3, fallA3);
            val++;
         }
         else if(c == '5')
