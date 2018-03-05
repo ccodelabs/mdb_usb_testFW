@@ -66,13 +66,13 @@ int main()
         else if(c == '2')
         {
             myIOs = IOS; // Toggle IOs level
-            printf("PA_5 + PA_7 On\n");
+            printf("RELAY OFF\n");
             wait(0.5); // 500 ms
         }
         else if(c == '6')
         {
             myIOs = 0x00; // Toggle IOs level
-            printf("PA_5 + PA_7 Off\n");
+            printf("RELAY ON\n");
             wait(0.5); // 500 ms
         }
         else if (c == '3')
