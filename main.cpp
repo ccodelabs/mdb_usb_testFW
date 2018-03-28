@@ -60,7 +60,7 @@ int main()
         char c = pc.getc(); // Read hyperterminal
         
         if(c == '1') {
-            meas_cur = current_value.read()*3300;
+            meas_cur = (current_value.read()*3300)/10;
             pc.printf("measure:%d\n", meas_cur);
         }
         else if(c == '2')
