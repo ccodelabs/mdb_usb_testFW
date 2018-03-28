@@ -1,7 +1,7 @@
 #include "mbed.h"
 
 AnalogIn current_value(A0);
-AnalogIn usb_value(A1);
+AnalogIn usb_value(A6);
 
 DigitalOut led(LED1);
 
